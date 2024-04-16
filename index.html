@@ -38,6 +38,7 @@
             justify-content: center;
             flex-direction: column;
         }
+
         .img {
             aspect-ratio: 1/1;
             position: relative;
@@ -110,6 +111,16 @@
               97% { transform:translateY(0%); }
               99% { transform:translateY(-3%); }
               100% { transform:translateY(0); }
+          }
+          @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            .main {
+              padding: 24px;
+            }
+            .telegram-btn_content-text {
+                font-size: 1rem;
+                margin: 0 20px;
+            }
           }
     </style>
 </head>
